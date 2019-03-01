@@ -1,0 +1,17 @@
+<nav class="navbar">
+  <h1 class="logo"> <span class="red">ng</span> <span class="orange"><span class="upper">s</span>ound</span> </h1>
+
+  <ul *ngIf="!isRegistered" class="log">
+    <li class="signUp">sign up</li>
+    <li> | </li>
+    <li class="logIn">log in</li>
+  </ul>
+
+  <ul *ngIf="isRegistered" class="log">
+    <li class="iconList"> <fa-icon [icon]="faList"></fa-icon> </li>
+    <li class="iconHeart"> <fa-icon [icon]="faHeart"></fa-icon> </li>
+    
+  </ul>
+
+
+</nav>

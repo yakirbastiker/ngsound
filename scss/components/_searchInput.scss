@@ -1,0 +1,32 @@
+@import "../variables/variables";
+
+.input {
+
+	background: linear-gradient(21deg, $soundcloud-color, $logo-color);
+	padding: .2rem;
+	display: inline-block;	
+    border-radius: 1rem;
+
+
+	*:not(span) {
+		display: inherit;
+		border-radius: inherit;
+		margin: 0;
+		border: none;
+		outline: none;
+		padding: 1.5rem 2rem;
+            
+	}
+		
+}
+
+
+
+input {
+	font-family: inherit;
+	line-height:inherit;
+	color:$inputSearch-color;
+    width: 30vw;
+    font-size: 2rem;
+
+}

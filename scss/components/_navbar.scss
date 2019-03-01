@@ -1,0 +1,57 @@
+@import "../variables/variables";
+
+.navbar {
+    width: 100vw;
+    margin-bottom: 2rem;
+    background-color: $nav-bacground;
+    padding: 2rem 3rem;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+        font-size: 2.5rem;
+        text-transform: capitalize;
+
+        .red {
+            color: $logo-color;
+        }
+
+        .orange {
+            color: $soundcloud-color;
+
+            .upper {
+                text-transform: uppercase;
+            }
+        }
+    }
+
+
+    .log {
+        list-style: none;
+        font-size: 2rem;
+        text-transform: capitalize;
+        color: $nav-color;
+        cursor: pointer;
+
+        li {
+            float: left;
+            display: block;
+            text-align: center;
+            
+
+            &:not(:last-child) {
+                padding-right: .9rem;
+            }
+
+            &.signUp:hover,
+            &.logIn:hover,
+            &.iconList:hover,
+            &.iconHeart:hover {
+                color: $text-color;
+            }
+
+        }
+    }
+}
